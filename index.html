@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hugo L'Haridon | Portfolio SISR</title>
+    <title>Hugo L'Haridon | Portfolio SISR & Cybersécurité</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
@@ -11,9 +11,10 @@
     <header class="sticky top-0 z-50 backdrop-blur-md bg-gray-950/70 border-b border-gray-800">
         <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#" class="text-lg font-semibold tracking-tight hover:text-blue-400 transition-colors">Hugo L'Haridon</a>
-            <nav class="flex space-x-6 text-sm font-medium text-gray-400">
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-400">
                 <a href="#propos" class="hover:text-gray-100 transition-colors">À propos</a>
                 <a href="#experiences" class="hover:text-gray-100 transition-colors">Expériences</a>
+                <a href="#projet-e5" class="hover:text-gray-100 transition-colors text-blue-400">Projet E5</a>
                 <a href="#competences" class="hover:text-gray-100 transition-colors">Compétences</a>
                 <a href="#veille" class="hover:text-gray-100 transition-colors">Veille</a>
                 <a href="#contact" class="hover:text-gray-100 transition-colors">Contact</a>
@@ -25,24 +26,225 @@
         
         <section id="propos" class="py-12 md:py-20">
             <div class="max-w-3xl">
-                <span class="text-blue-500 font-medium tracking-wider uppercase text-xs sm:text-sm block mb-3">Futur Expert Cybersécurité & Réseaux</span>
-                <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-                    Bonjour, je suis Hugo.
+                <span class="text-blue-500 font-medium tracking-wider uppercase text-xs sm:text-sm block mb-3">Futur Expert Cybersécurité & Infrastructures</span>
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6 animate-fade-in">
+                    Administrer, sécuriser et automatiser.
                 </h1>
                 <p class="text-lg text-gray-400 leading-relaxed mb-6">
-                    Actuellement en deuxième année de **BTS SIO (Services Informatiques aux Organisations) option SISR** à MyDigitalSchool Angers, mon parcours est guidé par une passion affirmée pour les infrastructures systèmes, les réseaux et la sécurité. 
+                    Actuellement en fin de **BTS SIO option SISR** à MyDigitalSchool Angers, je prépare mon intégration en **Bachelor 3 Cybersécurité et Administration Réseau** pour la rentrée de septembre 2026, avec l'ambition de poursuivre mon cursus jusqu'au Master (Bac+5).
                 </p>
-                <p class="text-lg text-gray-400 leading-relaxed">
-                    Après avoir consolidé mes capacités logiques et mes bases théoriques durant deux années en Licence Mathématiques et Informatique, j'ai choisi de m'orienter vers un cursus concret et professionnalisant. Fort de mes expériences sur le terrain et en entreprise, je développe au quotidien des compétences en administration d'environnements sécurisés. Mon objectif est de poursuivre mon évolution vers un **Bachelor en Cybersécurité** sous contrat d'apprentissage afin de me spécialiser et relever les défis techniques de demain.
+                <p class="text-lg text-gray-400 leading-relaxed mb-6">
+                    Mon parcours a débuté par deux années intensives en **Licence Mathématiques et Informatique** à l'Université d'Angers. Ce bagage universitaire m'a apporté une forte rigueur logique, une solide maîtrise algorithmique et une capacité d'abstraction indispensables pour appréhender les architectures réseaux complexes et les concepts avancés de la cybersécurité.
                 </p>
+                <div class="bg-blue-950/30 border border-blue-900/50 p-4 rounded-xl text-sm text-blue-300 max-w-2xl">
+                    <strong>Recherche active :</strong> Alternance de longue durée dès septembre 2026 (Rythme : 2 semaines en entreprise / 1 semaine en formation).
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="py-12 border-t border-gray-900">
+            <div class="max-w-3xl">
+                <span class="text-blue-500 font-medium tracking-wider uppercase text-xs sm:text-sm block mb-3">Parcours en entreprise</span>
+                <h2 class="text-3xl font-bold tracking-tight text-white mb-12">Expériences Professionnelles</h2>
+                
+                <div class="space-y-12 border-l-2 border-gray-800 pl-6 ml-2 relative">
+                    
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-1.5 bg-blue-500 h-3 w-3 rounded-full border-4 border-gray-950 shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+                            <h3 class="text-xl font-semibold text-gray-100">Apprenti Technicien Systèmes & Réseaux</h3>
+                            <span class="text-sm text-gray-500 font-medium">Janvier — Décembre 2025</span>
+                        </div>
+                        <p class="text-sm font-medium text-blue-400 mb-4">ALFI Technologies — Contrat d'apprentissage</p>
+                        <p class="text-sm text-gray-400 mb-3 font-mono">Environnement : Windows Server, Active Directory, Outils de Patch Management, Outils de diagnostic & Logs.</p>
+                        <ul class="text-gray-400 space-y-2 text-sm sm:text-base list-disc list-inside bg-gray-900/20 p-4 rounded-xl border border-gray-900/60">
+                            <li>Maintien en Condition Opérationnelle (MCO) et de Sécurité (MCS) du parc informatique hybride.</li>
+                            <li>Gestion des accès et des identités (IAM) : Administration fine de l'Active Directory et déploiement de GPO sécurisées basées sur le moindre privilège.</li>
+                            <li>Industrialisation et automatisation du Patch Management (déploiement automatisé des correctifs de sécurité).</li>
+                            <li>Support technique et résolution d'incidents systèmes et réseaux de niveaux 1 et 2.</li>
+                        </ul>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-1.5 bg-gray-700 h-3 w-3 rounded-full border-4 border-gray-950"></div>
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+                            <h3 class="text-xl font-semibold text-gray-200">Apprenti Support & Infrastructure</h3>
+                            <span class="text-sm text-gray-500 font-medium">Septembre — Décembre 2024</span>
+                        </div>
+                        <p class="text-sm font-medium text-gray-500 mb-4">ESPL Angers (Secteur Éducation) — Contrat d'apprentissage</p>
+                        <p class="text-sm text-gray-500 mb-3 font-mono">Environnement : Active Directory, Commutateurs réseau, GLPI, Masters de postes durcis.</p>
+                        <ul class="text-gray-400 space-y-2 text-sm sm:text-base list-disc list-inside bg-gray-900/20 p-4 rounded-xl border border-gray-900/60">
+                            <li>Support technique de proximité de niveaux 1 & 2 auprès de 4000 étudiants et du corps enseignant.</li>
+                            <li>Mise en place de la segmentation réseau via la configuration de VLANs pour isoler les flux (Administratif, Étudiants, Invités).</li>
+                            <li>Création, sécurisation et déploiement de masters durcis pour les postes de travail (Hardening).</li>
+                            <li>Gestion de parc et optimisation de l'inventaire des actifs informatiques via GLPI.</li>
+                        </ul>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-1.5 bg-gray-800 h-3 w-3 rounded-full border-4 border-gray-950"></div>
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+                            <h3 class="text-lg font-semibold text-gray-300">Stage d'Observation & Découverte</h3>
+                            <span class="text-sm text-gray-500">Décembre 2023</span>
+                        </div>
+                        <p class="text-sm font-medium text-gray-600 mb-2">Octave (Angers) — Éditeur ERP / Cloud</p>
+                        <p class="text-gray-400 text-sm pl-2">Immersion complète au sein des différents pôles (architecture réseau, développement, intégration d'ERP et gestion de projet) pour acquérir une vision globale des infrastructures d'entreprise.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projet-e5" class="py-12 border-t border-gray-900 bg-gradient-to-b from-blue-950/10 to-transparent p-6 rounded-2xl border border-gray-900">
+            <div class="max-w-3xl mx-auto">
+                <span class="text-blue-400 font-medium tracking-wider uppercase text-xs sm:text-sm block mb-3">Démonstration Technique Épreuve E5</span>
+                <h2 class="text-3xl font-bold tracking-tight text-white mb-4">Conception et déploiement d'une infrastructure réseau segmentée et sécurisée</h2>
+                <p class="text-gray-400 mb-6 text-sm sm:text-base">
+                    Réalisation d'une infrastructure complète simulant un environnement d'entreprise critique sous **VMware Workstation Pro**, articulée autour d'un pare-feu **pfSense 2.7.0 CE**, d'un contrôleur de domaine **Windows Server 2022** et de serveurs **Debian 12**.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                    <div class="bg-gray-900/60 p-4 rounded-xl border border-gray-800">
+                        <h4 class="text-blue-400 font-semibold text-sm uppercase mb-2">🛡️ Sécurisation Périmétrique & IAM</h4>
+                        <ul class="text-xs text-gray-400 space-y-1.5 list-disc list-inside">
+                            <li>Contrôleur de domaine (SRV-AD-01) pour la forêt <code class="text-gray-200">infra.local</code>.</li>
+                            <li>Arborescence stricte d'Unités d'Organisation (OU).</li>
+                            <li>GPO de restriction (Panneau de configuration, restrictions utilisateurs).</li>
+                            <li>Partage de fichiers sécurisé avec permissions NTFS fines (<code class="text-gray-200">G_Salarie_RW</code>).</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-900/60 p-4 rounded-xl border border-gray-800">
+                        <h4 class="text-blue-400 font-semibold text-sm uppercase mb-2">🌐 Routage & Cloisonnement</h4>
+                        <ul class="text-xs text-gray-400 space-y-1.5 list-disc list-inside">
+                            <li>Migration d'une topologie Router-on-a-Stick vers une segmentation physique virtuelle hermétique (LAN Segments).</li>
+                            <li>Zone DMZ isolée (VLAN 40) hébergeant un serveur Web Apache2 sous Debian 12.</li>
+                            <li>Filtrage pfSense en stratégie <span class="text-red-400 font-mono">Default Deny</span>, Aliases et Hybrid Outbound NAT.</li>
+                            <li>Cloisonnement <span class="text-blue-400 font-semibold">Zero Trust</span> du segment Périphériques (VLAN 50) : flux imprimantes sortants interdits, seul le flux d'impression entrant (TCP 9100) est autorisé depuis le VLAN Utilisateurs.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold text-white mb-4">Résolution d'incidents (Troubleshooting marquant)</h3>
+                <div class="space-y-4">
+                    <div class="p-4 bg-gray-900/30 rounded-xl border border-gray-800/80">
+                        <span class="text-xs font-mono text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded mb-2 inline-block">Incident Système : Conflit WSUS / RSAT</span>
+                        <p class="text-sm text-gray-300"><strong>Problématique :</strong> Erreur 87 via DISM lors de l'installation des outils RSAT sur Windows 10 (1803) due à un conflit de stratégie WSUS.</p>
+                        <p class="text-sm text-gray-400 mt-1"><strong>Résolution :</strong> Modification temporaire du registre (<code class="text-gray-300">UseWUServer = 0</code>), purge et rafraîchissement des caches de GPO via <code class="text-gray-300">gpresult /r</code>, puis bascule de l'administration via un accès RDP sécurisé.</p>
+                    </div>
+                    <div class="p-4 bg-gray-900/30 rounded-xl border border-gray-800/80">
+                        <span class="text-xs font-mono text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded mb-2 inline-block">Incident Réseau : Perte de porteuse WAN pfSense</span>
+                        <p class="text-sm text-gray-300"><strong>Problématique :</strong> Message <code class="text-red-400">No Carrier</code> sur l'interface WAN du pfSense virtualisé bloquant les flux de mise à jour.</p>
+                        <p class="text-sm text-gray-400 mt-1"><strong>Résolution :</strong> Diagnostic des services de l'hôte physique. Identification du gel des cartes virtuelles VMware, résolu par le redémarrage forcé des services hôtes <code class="text-gray-300">VMware NAT Service</code> et <code class="text-gray-300">VMware DHCP Service</code>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="py-12 border-t border-gray-900">
+            <div class="max-w-3xl">
+                <span class="text-blue-500 font-medium tracking-wider uppercase text-xs sm:text-sm block mb-3">Mon Arsenal Technique</span>
+                <h2 class="text-3xl font-bold tracking-tight text-white mb-8">Compétences & Outils</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+                    <div>
+                        <h3 class="text-gray-300 font-semibold mb-3">Systèmes & Hardening</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">Windows Server 2022</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">Active Directory (GPO/IAM)</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">Linux (Debian / Ubuntu)</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">Durcissement (Hardening OS)</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-300 font-semibold mb-3">Réseaux & Sécurité Périmétrique</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">pfSense Firewall</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">Segmentation (VLANs / ACL)</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">VPN (IPsec / OpenVPN)</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">Wireshark (Analyse de trames)</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-300 font-semibold mb-3">Automation & Gouvernance</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">PowerShell Scripting</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">Bash Scripting</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">GLPI / Helpdesk</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">Méthodologie ITIL / PSSI</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-300 font-semibold mb-3">Atouts & Langues</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-950/50 text-blue-400 border border-blue-900 px-3 py-1 rounded-full font-medium">Anglais Technique (B2)</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">Espagnol (B1)</span>
+                            <span class="bg-gray-900 text-gray-300 border border-gray-800 px-3 py-1 rounded-full">Permis B & Véhiculé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="veille" class="py-12 border-t border-gray-900">
+            <div class="max-w-3xl">
+                <span class="text-blue-500 font-medium tracking-wider uppercase text-xs sm:text-sm block mb-3">Curation d'informations réglementaire</span>
+                <h2 class="text-3xl font-bold tracking-tight text-white mb-6">Veille Technologique</h2>
+                <div class="bg-gray-900/40 border border-gray-800 p-6 rounded-2xl space-y-4">
+                    <h3 class="text-xl font-semibold text-gray-100">Le durcissement (Hardening) de l'Active Directory et l'automatisation du Patch Management face aux ransomwares modernes</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm sm:text-base">
+                        Afin de répondre aux exigences de l'épreuve E5 et d'anticiper les menaces actuelles, ma veille se concentre sur la sécurisation des architectures Active Directory (cibles privilégiées des cyber-attaques) et l'analyse des vulnérabilités critiques (CVE, Zero-day). Ce sujet fait un lien parfait entre mes interventions terrain chez ALFI Technologies et mes futures spécialisations en cybersécurité.
+                    </p>
+                    <div class="pt-2">
+                        <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2">Mes outils de curation & sources :</h4>
+                        <div class="flex flex-wrap gap-3 text-xs text-gray-400">
+                            <span class="flex items-center gap-1">🛡️ Bulletins de sécurité CERT-FR (ANSSI)</span>
+                            <span class="flex items-center gap-1">🌐 Flux RSS agrégés via Feedly</span>
+                            <span class="flex items-center gap-1">📚 IT-Connect & Documentations techniques</span>
+                            <span class="flex items-center gap-1">💬 Communautés Reddit (r/sysadmin, r/cybersecurity)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-12 border-t border-gray-900">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-blue-500 font-medium tracking-wider uppercase text-xs sm:text-sm block mb-3">Au-delà du réseau</span>
+                    <h2 class="text-3xl font-bold tracking-tight text-white mb-6">Gestion de projets & Soft Skills</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        <strong>Entrepreneuriat & Autonomie :</strong> Créateur et gestionnaire de projets e-commerce indépendants sur Etsy (<span class="text-gray-300 italic">Instant Botanique</span>, <span class="text-gray-300 italic">NeoNomadStudio</span>). Ce projet annexe démontre ma capacité à piloter une activité de A à Z, à concevoir une image de marque (branding) et à intégrer des outils d'Intelligence Artificielle pour la création de maquettes visuelles (mockups).
+                    </p>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        <strong>Esprit d'équipe & Rigueur :</strong> Pratique du football en compétition au niveau régional en tant que défenseur. Ce poste exige une concentration constante, une excellente gestion du stress et une communication sans faille au service du collectif.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col justify-center bg-gray-900/30 border border-gray-900 p-6 rounded-2xl">
+                    <h2 class="text-2xl font-bold tracking-tight text-white mb-6">Me contacter</h2>
+                    <div class="space-y-4 text-sm font-medium">
+                        <div class="flex items-center justify-between p-3 bg-gray-900/60 rounded-xl border border-gray-800">
+                            <span class="text-gray-500">Téléphone</span>
+                            <a href="tel:0767782065" class="text-blue-400 hover:underline">07 67 78 20 65</a>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-900/60 rounded-xl border border-gray-800">
+                            <span class="text-gray-500">E-mail</span>
+                            <a href="mailto:hugo.lharidon.pro@gmail.com" class="text-blue-400 hover:underline">hugo.lharidon.pro@gmail.com</a>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-900/60 rounded-xl border border-gray-800">
+                            <span class="text-gray-500">Réseau pro</span>
+                            <a href="https://linkedin.com/in/hugolharidon/" target="_blank" class="text-blue-400 hover:underline">linkedin.com/in/hugolharidon/</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="border-t border-gray-900 py-8 mt-24">
-        <div class="max-w-5xl mx-auto px-6 text-center text-sm text-gray-500">
-            &copy; 2026 Hugo L'Haridon. Tous droits réservés.
+    <footer class="border-t border-gray-900 py-8 mt-24 text-center text-xs sm:text-sm text-gray-500">
+        <div class="max-w-5xl mx-auto px-6">
+            &copy; 2026 Hugo L'Haridon. Déployé via GitOps — Tous droits réservés.
         </div>
     </footer>
 
